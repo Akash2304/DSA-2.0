@@ -39,6 +39,29 @@ it is a machine, and it works on any task based on 0 and 1 so it can not sense r
 a sequence of random numbers is used in C++. This Pseudo-Random Number Generator is capable of sensing randomness in a program. Rand_max is a constant whose value is 
 set to 32767, found in the header file <cstdlib>.
 
+
+
+
+class Solution {
+public:
+    unordered_map<int,vector<int>> m;
+    Solution(vector<int>& nums) {
+        for(int i=0;i<nums.size();i++)
+        {
+            m[nums[i]].push_back(i);
+        }
+    }
+    
+    int pick(int target) {
+        int x=m[target].size();
+
+        x=rand()%x;  //here rand() give any random no.and when we mod it x we get diff index ....
+
+        return m[target][x];
+    }
+};
+/***********************************************************************************************************************************************************************/
+
   class Solution {
 
     unordered_map<int, vector<int>> m;
