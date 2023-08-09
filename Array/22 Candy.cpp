@@ -29,6 +29,9 @@ n == ratings.length
 0 <= ratings[i] <= 2 * 104
 *************************************************************************************************************************************************************************/
 
+DO DRY RUN FOR BETTER UNDERSTANDING.........
+
+
 class Solution {
 public:
     int candy(vector<int>& ratings) {
