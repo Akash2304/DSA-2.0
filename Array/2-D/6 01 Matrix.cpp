@@ -26,7 +26,7 @@ n == mat[i].length
 mat[i][j] is either 0 or 1.
 There is at least one 0 in mat.
 ************************************************************************************************************************************************************************/
-
+FOR BETTER UNDERSTATING VISIT YOUTUBE 
 class Solution {
 public:
     
