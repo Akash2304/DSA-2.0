@@ -34,7 +34,7 @@ public:
         while(left<right)
         {
             
-            long mid=left+(right-left)/2;
+            long mid=left+(right-left)/2; // for prevent overflow condition if we have high right value and (left+right) will getoverflow condition that why we do this
            
             //(mid/A)+(mid/B)-(mid/lcm) ..mid/a gives no.before n divided by a same for mid/b,and that mid/lcm is for common no.which are divisible by a,b
           //after minus we get thier count
