@@ -37,7 +37,7 @@ public:
             if(num % i == 0) {
                 sum += i;
                 count++;
-                if(i * i != num) {
+                if(i * i != num) {  // same value do baar add na ho isiliye  ye cond checkkkkk.....
                     sum += num / i;
                     count++;
                 }
